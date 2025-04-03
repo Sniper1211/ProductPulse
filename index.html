@@ -19,20 +19,35 @@
                 <a href="#">往期产品</a>
                 <a href="#">关于我们</a>
             </nav>
-            <div class="subscribe">
-                <button class="btn-subscribe">订阅每日推送</button>
+            <div class="nav-buttons">
+                <button class="theme-switch" id="theme-toggle">
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </header>
         
         <main class="main-content">
             <div class="date-display">
-                <span class="date">2023年11月15日</span>
-                <span class="day">星期三</span>
+                <span class="date"></span>
+                <span class="day"></span>
             </div>
             
             <div class="product-card">
                 <div class="product-image">
-                    <img src="product-image.jpg" alt="今日推荐产品">
+                    <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-1.2.1&auto=format&fit=crop&w=1301&q=80" alt="今日推荐产品">
                     <div class="image-overlay"></div>
                 </div>
                 
@@ -70,7 +85,7 @@
                 <h3>订阅每日新品推送</h3>
                 <p>每天早上一封邮件，了解最新科技产品</p>
                 <form class="subscribe-form">
-                    <input type="email" placeholder="您的电子邮箱">
+                    <input type="email" placeholder="您的电子邮箱" required>
                     <button type="submit">订阅</button>
                 </form>
             </div>
@@ -89,9 +104,12 @@
                 <a href="#"><span>WeChat</span></a>
             </div>
             <div class="copyright">
-                © 2023 ProductPulse. 保留所有权利。
+                © <span class="year">2023</span> ProductPulse. 保留所有权利。
             </div>
         </footer>
     </div>
+    <script src="theme-switcher.js"></script>
+    <script src="date-time.js"></script>
+    <script src="newsletter.js"></script>
 </body>
 </html>
