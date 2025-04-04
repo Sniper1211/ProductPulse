@@ -498,9 +498,16 @@ body.light-theme .sun-icon {
     border-radius: var(--button-radius) 0 0 var(--button-radius);
     font-size: 16px;
     outline: none;
-    background-color: rgba(15, 23, 42, 0.4);
+    background-color: var(--card-bg);
     color: var(--text-color);
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.light-theme .subscribe-form input {
+    background-color: rgba(248, 250, 252, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(15, 23, 42, 0.03);
 }
 
 .subscribe-form input::placeholder {
